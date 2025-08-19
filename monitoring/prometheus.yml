@@ -1,0 +1,26 @@
+
+
+# monitoring/prometheus.yml
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+rule_files:
+  - "alerts.yml"
+
+scrape_configs:
+  - job_name: 'ecommerce-services'
+    static_configs:
+      - targets: 
+          - 'localhost:8001'  # user-service
+          - 'localhost:8002'  # product-service  
+          - 'localhost:8003'  # order-service
+          - 'localhost:8004'  # payment-service
+    scrape_interval: 30s
+    scrape_timeout: 10s
+    metrics_path: '/metrics'
+
+  - job_name: 'system-metrics'
+    static_configs:
+      - targets: ['localhost:9100']  # node_exporter - but not configured
+    scrape_interval: 15s

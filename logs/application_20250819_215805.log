@@ -1,0 +1,182 @@
+2025-08-19 21:58:05,393 - EcommerceRunner - INFO - === HEALTH CHECK STARTED ===
+2025-08-19 21:58:05,394 - EcommerceRunner - INFO - ✅ user-service (port 8001): HEALTHY
+2025-08-19 21:58:05,394 - EcommerceRunner - INFO - ✅ product-service (port 8002): HEALTHY
+2025-08-19 21:58:05,394 - EcommerceRunner - INFO - ✅ order-service (port 8003): HEALTHY
+2025-08-19 21:58:05,394 - EcommerceRunner - INFO - ✅ payment-service (port 8004): HEALTHY
+2025-08-19 21:58:05,394 - EcommerceRunner - INFO - === HEALTH CHECK COMPLETED ===
+2025-08-19 21:58:07,394 - EcommerceRunner - INFO - 📊 Generating baseline metrics...
+2025-08-19 21:58:07,395 - EcommerceRunner - INFO - METRICS: {
+  "timestamp": "2025-08-19T21:58:07.394621",
+  "services": {
+    "user-service": {
+      "status": "running",
+      "response_time": 4.267536143997404,
+      "error_rate": 1.0045325630447675,
+      "throughput": 194,
+      "cpu_usage": 0
+    },
+    "product-service": {
+      "status": "running",
+      "response_time": 4.966483526254101,
+      "error_rate": 1.6243763195513774,
+      "throughput": 289,
+      "cpu_usage": 0
+    },
+    "order-service": {
+      "status": "running",
+      "response_time": 4.073866410889393,
+      "error_rate": 0.7707702585500363,
+      "throughput": 992,
+      "cpu_usage": 0
+    },
+    "payment-service": {
+      "status": "running",
+      "response_time": 2.8534911114034913,
+      "error_rate": 1.4939784719539344,
+      "throughput": 868,
+      "cpu_usage": 0
+    }
+  },
+  "system": {
+    "cpu_usage": 43,
+    "memory_usage": 52,
+    "disk_usage": 92,
+    "network_latency": 2.980277684138049
+  }
+}
+2025-08-19 21:58:07,395 - EcommerceRunner - INFO - 🌐 Generating access logs...
+2025-08-19 21:58:09,398 - EcommerceRunner - INFO - ✅ Platform running normally...
+2025-08-19 21:58:12,399 - EcommerceRunner - INFO - 🔄 Starting load test simulation...
+2025-08-19 21:58:12,508 - EcommerceRunner - INFO - Request request_3 completed successfully
+2025-08-19 21:58:12,617 - EcommerceRunner - INFO - Request request_0 completed successfully
+2025-08-19 21:58:12,645 - EcommerceRunner - INFO - Request request_2 completed successfully
+2025-08-19 21:58:13,001 - EcommerceRunner - INFO - Request request_7 completed successfully
+2025-08-19 21:58:13,161 - EcommerceRunner - INFO - Request request_8 completed successfully
+2025-08-19 21:58:13,202 - EcommerceRunner - INFO - Request request_4 completed successfully
+2025-08-19 21:58:14,093 - EcommerceRunner - INFO - Load test completed
+2025-08-19 21:58:16,093 - EcommerceRunner - INFO - 🎯 Simulating incident scenarios...
+2025-08-19 21:58:16,093 - EcommerceRunner - INFO - 🚨 INCIDENT TRIGGERED: database_connection_leak
+2025-08-19 21:58:18,187 - EcommerceRunner - INFO - METRICS: {
+  "timestamp": "2025-08-19T21:58:18.187145",
+  "services": {
+    "user-service": {
+      "status": "running",
+      "response_time": 2.4084916719787404,
+      "error_rate": 0.8686136423417522,
+      "throughput": 716,
+      "cpu_usage": 0
+    },
+    "product-service": {
+      "status": "running",
+      "response_time": 1.5120302107055958,
+      "error_rate": 0.03938914279454238,
+      "throughput": 363,
+      "cpu_usage": 0
+    },
+    "order-service": {
+      "status": "degraded",
+      "response_time": 1.3300841313132679,
+      "error_rate": 13.811577161374094,
+      "throughput": 132,
+      "cpu_usage": 0
+    },
+    "payment-service": {
+      "status": "running",
+      "response_time": 2.3177059389385364,
+      "error_rate": 1.326521820768035,
+      "throughput": 577,
+      "cpu_usage": 0
+    }
+  },
+  "system": {
+    "cpu_usage": 38,
+    "memory_usage": 68,
+    "disk_usage": 93,
+    "network_latency": 0.734480980462898
+  }
+}
+2025-08-19 21:58:18,189 - EcommerceRunner - INFO - 🚨 INCIDENT TRIGGERED: disk_space_issue
+2025-08-19 21:58:19,357 - EcommerceRunner - INFO - METRICS: {
+  "timestamp": "2025-08-19T21:58:19.357105",
+  "services": {
+    "user-service": {
+      "status": "running",
+      "response_time": 2.4284327558030667,
+      "error_rate": 0.30647647437979203,
+      "throughput": 470,
+      "cpu_usage": 0
+    },
+    "product-service": {
+      "status": "running",
+      "response_time": 1.5359989209460065,
+      "error_rate": 1.1816797868560525,
+      "throughput": 453,
+      "cpu_usage": 0
+    },
+    "order-service": {
+      "status": "degraded",
+      "response_time": 3.0558512802867237,
+      "error_rate": 13.735481217827108,
+      "throughput": 307,
+      "cpu_usage": 0
+    },
+    "payment-service": {
+      "status": "running",
+      "response_time": 4.331927680903387,
+      "error_rate": 1.9697547773045219,
+      "throughput": 682,
+      "cpu_usage": 0
+    }
+  },
+  "system": {
+    "cpu_usage": 87,
+    "memory_usage": 65,
+    "disk_usage": 67,
+    "network_latency": 0.7228537518528869
+  }
+}
+2025-08-19 21:58:21,360 - EcommerceRunner - INFO - === HEALTH CHECK STARTED ===
+2025-08-19 21:58:21,360 - EcommerceRunner - INFO - ✅ user-service (port 8001): HEALTHY
+2025-08-19 21:58:21,361 - EcommerceRunner - INFO - ✅ product-service (port 8002): HEALTHY
+2025-08-19 21:58:21,361 - EcommerceRunner - WARNING - ⚠️  order-service (port 8003): DEGRADED - Performance issues detected
+2025-08-19 21:58:21,361 - EcommerceRunner - INFO - ✅ payment-service (port 8004): HEALTHY
+2025-08-19 21:58:21,361 - EcommerceRunner - INFO - === HEALTH CHECK COMPLETED ===
+2025-08-19 21:58:21,361 - EcommerceRunner - INFO - METRICS: {
+  "timestamp": "2025-08-19T21:58:21.361589",
+  "services": {
+    "user-service": {
+      "status": "running",
+      "response_time": 4.63794119206705,
+      "error_rate": 0.3208667985290438,
+      "throughput": 1171,
+      "cpu_usage": 0
+    },
+    "product-service": {
+      "status": "running",
+      "response_time": 3.9679159856289936,
+      "error_rate": 1.056269758037831,
+      "throughput": 560,
+      "cpu_usage": 0
+    },
+    "order-service": {
+      "status": "degraded",
+      "response_time": 2.9895667870014258,
+      "error_rate": 9.12268044736053,
+      "throughput": 642,
+      "cpu_usage": 0
+    },
+    "payment-service": {
+      "status": "running",
+      "response_time": 0.6694219306003552,
+      "error_rate": 1.3156290189125432,
+      "throughput": 859,
+      "cpu_usage": 0
+    }
+  },
+  "system": {
+    "cpu_usage": 20,
+    "memory_usage": 51,
+    "disk_usage": 65,
+    "network_latency": 0.5295681886581648
+  }
+}

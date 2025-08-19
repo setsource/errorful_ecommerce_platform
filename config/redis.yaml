@@ -1,0 +1,16 @@
+
+# config/redis.yaml
+redis:
+  clusters:
+    - host: redis-1
+      port: 6379
+    - host: redis-2
+      port: 6380  # Wrong port - should be 6379
+  connection_pool:
+    max_connections: 100
+    retry_attempts: 3
+    retry_delay: 1000
+  cache_settings:
+    default_ttl: 3600
+    max_memory: 512mb
+    eviction_policy: allkeys-lru

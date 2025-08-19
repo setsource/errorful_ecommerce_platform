@@ -1,0 +1,31 @@
+
+# config/monitoring.yaml
+monitoring:
+  prometheus:
+    scrape_interval: 15s
+    evaluation_interval: 15s
+  
+  alerts:
+    cpu_threshold: 80
+    memory_threshold: 85
+    disk_threshold: 90
+    response_time_threshold: 2000ms
+    error_rate_threshold: 5
+  
+  endpoints:
+    - name: user-service
+      url: http://localhost:8001/health
+      timeout: 5s
+      interval: 30s
+    - name: product-service  
+      url: http://localhost:8002/health
+      timeout: 5s
+      interval: 30s
+    - name: order-service
+      url: http://localhost:8003/health
+      timeout: 5s
+      interval: 30s
+    - name: payment-service
+      url: http://localhost:8004/health
+      timeout: 10s  # Longer timeout due to external dependencies
+      interval: 30s

@@ -1,0 +1,4 @@
+# services/user-service/requirements.txt
+Flask==2.3.3
+requests==2.28.2
+psutil==5.9.0

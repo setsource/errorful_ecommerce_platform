@@ -1,0 +1,18 @@
+2025-08-19 21:58:13,287 - EcommerceRunner - ERROR - Request request_6 failed on product-service: Connection timeout
+2025-08-19 21:58:13,607 - EcommerceRunner - ERROR - Request request_5 failed on product-service: Connection timeout
+2025-08-19 21:58:13,860 - EcommerceRunner - ERROR - Request request_1 failed on product-service: Connection timeout
+2025-08-19 21:58:13,861 - EcommerceRunner - ERROR - Load test request failed: Service product-service unavailable
+2025-08-19 21:58:13,861 - EcommerceRunner - ERROR - Load test request failed: Service product-service unavailable
+2025-08-19 21:58:13,861 - EcommerceRunner - ERROR - Load test request failed: Service product-service unavailable
+2025-08-19 21:58:14,091 - EcommerceRunner - ERROR - Request request_9 failed on payment-service: Connection timeout
+2025-08-19 21:58:14,092 - EcommerceRunner - ERROR - Load test request failed: Service payment-service unavailable
+2025-08-19 21:58:16,094 - EcommerceRunner - ERROR - DATABASE CONNECTION POOL EXHAUSTED
+2025-08-19 21:58:16,094 - EcommerceRunner - ERROR - Connection pool size exceeded: 50/20 connections active
+2025-08-19 21:58:16,094 - EcommerceRunner - ERROR - service=order-service error=connection_timeout duration=30s
+2025-08-19 21:58:16,094 - EcommerceRunner - ERROR - Multiple queries stuck in WAITING state
+2025-08-19 21:58:16,094 - EcommerceRunner - CRITICAL - Database performance degraded - query timeout increased to 45s
+2025-08-19 21:58:18,189 - EcommerceRunner - ERROR - DISK SPACE CRITICAL
+2025-08-19 21:58:18,189 - EcommerceRunner - ERROR - disk_usage=96% available=2.3GB path=/var/logs/
+2025-08-19 21:58:18,189 - EcommerceRunner - ERROR - Log rotation failed - disk write errors detected
+2025-08-19 21:58:18,189 - EcommerceRunner - ERROR - Application logging disabled to prevent system crash
+2025-08-19 21:58:18,189 - EcommerceRunner - CRITICAL - Manual intervention required - disk cleanup needed
